@@ -120,7 +120,7 @@ blacksummer/
 
 # 🧑‍💻 Author
 
-**Devaansh S.K Gupta**\
+**Devaansh Gupta**\
 Monash University\
 ETC5523 — Communicating with Data
 
