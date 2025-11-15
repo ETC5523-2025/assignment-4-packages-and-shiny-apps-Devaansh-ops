@@ -1,0 +1,25 @@
+Package: blacksummer
+Title: Exploring Bushfire Risk and Climate Change
+Version: 0.0.1
+Authors@R:
+    person("Devaansh", "Gupta",
+           email = "your.email@monash.edu",
+           role = c("aut", "cre"))
+Description: An interactive R package that explores extreme bushfire risk based on summary statistics from attribution studies.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    shiny,
+    bslib,
+    dplyr,
+    tibble
+Suggests:
+    quarto,
+    knitr,
+    rmarkdown,
+    pkgdown
+Depends:
+    R (>= 4.1.0)
+LazyData: true
