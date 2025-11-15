@@ -4,7 +4,7 @@
 #' attribution analysis.
 #'
 #' @format A tibble with 4 rows and 7 variables:
-#' \describe{
+#' @describe{
 #'   \item{index}{Fire-weather index name.}
 #'   \item{region}{Geographic region.}
 #'   \item{metric}{Description of index.}

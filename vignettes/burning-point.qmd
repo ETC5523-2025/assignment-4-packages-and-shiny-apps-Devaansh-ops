@@ -1,22 +1,12 @@
 ---
-title: "🔥 Burning Point: Climate, Data, and Responsibility"
-subtitle: "A Tufte-style exploration of Australia’s Black Summer bushfires"
+title: "Burning Point: Climate, Data, and Responsibility"
 author: "Devaansh Gupta"
 format:
   html:
+    toc: true
     theme: cosmo
-    toc: true
-    toc-depth: 3
-    code-fold: false
-    df-print: paged
-    format-resources:
-      - images/bushfire.jpg
-  tufte-html:
-    toc: true
-    code-tools: false
-    number-sections: false
-    format-resources:
-      - images/bushfire.jpg
+execute:
+  echo: true
 ---
 
 ```{r setup, include=FALSE}
@@ -26,26 +16,32 @@ library(dplyr)
 
 🌏 **The Inferno Down Under: Unravelling a Climate Mystery**
 
-Australia’s *Black Summer* of 2019–2020 was not just another bushfire season —\
+Australia’s *Black Summer* of 2019–2020 was not just another bushfire season —
+
 it was a national trauma.
 
-➡️ **19 million hectares burned**\
-➡️ **6,000+ buildings destroyed**\
-➡️ **34 human lives lost**\
-➡️ **Over 1.5 billion animals killed**\
+➡️ **19 million hectares burned**
+
+➡️ **6,000+ buildings destroyed**
+
+➡️ **34 human lives lost**
+
+➡️ **Over 1.5 billion animals killed**
+
 ➡️ **Smoke that circled the globe**
 
 An entire continent seemed ablaze.
 
-::: margin
-![Bushfire map of Australia](images/bushfire.jpg){width="90%"}
+::: {style="float:right; width:40%; margin-left:15px;"}
+<img src="images/bushfire.jpg" width="100%"/>
 :::
 
 At the same time, one question grew louder:
 
 > **Was this simply a horrific natural disaster, or did human-driven climate change fuel the flames?**
 
-The scientific community set out to answer this — not through politics, but through\
+The scientific community set out to answer this — not through politics, but through
+
 **attribution science**, data, and climate modelling.
 
 This vignette walks through the findings of van Oldenborgh et al. (2021) while making the science accessible, visual, and deeply human.
@@ -56,14 +52,18 @@ This vignette walks through the findings of van Oldenborgh et al. (2021) while m
 
 Event attribution science compares:
 
--   **World A:** The climate *with* human greenhouse gas emissions\
+-   **World A:** The climate *with* human greenhouse gas emissions
+
 -   **World B:** A hypothetical world *without* human emissions (pre-industrial)
 
 Researchers used:
 
-✔ **ERA5 reanalysis (1979–2020)** for historic weather\
-✔ **MODIS satellite imagery** to map burned regions\
-✔ **11 climate model ensembles** (CMIP5 + CMIP6)\
+✔ **ERA5 reanalysis (1979–2020)** for historic weather
+
+✔ **MODIS satellite imagery** to map burned regions
+
+✔ **11 climate model ensembles** (CMIP5 + CMIP6)
+
 ✔ Fire-weather indicators like FWI and TX7x
 
 At the core of the study lies the:
@@ -76,7 +76,12 @@ At the core of the study lies the:
 
 Here’s a simulated demonstration of how warming trends appear over time:
 
-```{r fig-temp-trend, echo=FALSE, fig-cap="Simulated temperature anomalies in southeastern Australia (1900–2020), showing a clear warming trend amid natural variability."}
+```{r}
+#| label: fig-temp-trend
+#| echo: false
+#| fig-cap: "Simulated temperature anomalies in southeastern Australia (1900–2020), showing a clear warming trend amid natural variability."
+#| fig-width: 8
+#| fig-height: 5
 
 set.seed(42)
 data <- data.frame(
@@ -94,7 +99,7 @@ ggplot(data, aes(Year, Temp)) +
   theme_minimal(base_size = 13)
 ```
 
-🔥 **Finding #1 — Heatwaves were 1–2°C hotter than they would have been without human emissions.**\
+🔥 **Finding #1 — Heatwaves were 1–2°C hotter than they would have been without human emissions.**
 
 This alone doubled the likelihood of extreme heat events.
 
@@ -115,7 +120,8 @@ kable(fire_risk_data,
       col.names = c("Climate Scenario", "Probability Ratio", "Risk Increase"))
 ```
 
-👉 **Even today, climate change has increased extreme fire-weather risk by at least 30%.**\
+👉 **Even today, climate change has increased extreme fire-weather risk by at least 30%.**
+
 At +2°C global warming, this increases dramatically.
 
 ------------------------------------------------------------------------
@@ -129,7 +135,8 @@ Drought, however, did **not** show a clear anthropogenic trend.
 Why?
 
 -   2019 drought was strongly influenced by **natural climate modes**:
-    -   **IOD (Indian Ocean Dipole)** — extremely positive\
+    -   **IOD (Indian Ocean Dipole)** — extremely positive
+
     -   **SAM (Southern Annular Mode)** — extremely negative
 
 This means **climate change did not directly cause the drought**, but it magnified the impacts by intensifying heat.
@@ -138,8 +145,10 @@ This means **climate change did not directly cause the drought**, but it magnifi
 
 # 🧩 **Putting It Together: What Really Drove Black Summer?**
 
-✔ Human-driven warming → **increased likelihood of fire-favourable weather**\
-✔ Natural variability → **triggered the extreme drought**\
+✔ Human-driven warming → **increased likelihood of fire-favourable weather**
+
+✔ Natural variability → **triggered the extreme drought**
+
 ✔ Combined effect → **a historically unprecedented fire season**
 
 Even more striking:
@@ -154,7 +163,8 @@ We turned a bad year into a catastrophic one.
 
 ![Artist’s impression of Australia burning](images/bushfire.jpg){#fig-bushfire width="90%"}
 
-A continent glowing with fire.\
+A continent glowing with fire.
+
 A reminder that attribution is not just statistics — it is lived reality.
 
 ------------------------------------------------------------------------
@@ -171,9 +181,12 @@ The science tells us three things:
 
 This means:
 
--   Stronger fire-management systems\
--   Better early-warning systems\
--   Smarter fuel-load management\
+-   Stronger fire-management systems
+
+-   Better early-warning systems
+
+-   Smarter fuel-load management
+
 -   Emission reductions to limit future risk
 
 The Black Summer is not just behind us — it is a preview.
@@ -184,6 +197,6 @@ The Black Summer is not just behind us — it is a preview.
 
 This vignette is based on:
 
--   van Oldenborgh et al. (2021), *Attribution of the Australian bushfire risk to anthropogenic climate change*, NHESS\
+-   van Oldenborgh et al. (2021), *Attribution of the Australian bushfire risk to anthropogenic climate change*, NHESS
 
 -   Dowdy (2018), *Climatological variability of fire weather in Australia*

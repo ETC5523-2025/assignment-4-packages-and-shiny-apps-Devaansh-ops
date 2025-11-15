@@ -16,12 +16,16 @@ blacksummer: Exploring Australia’s Black Summer Bushfire Risk
 
 The **blacksummer** R package provides:
 
-- ✔️ A clean bushfire risk dataset  
-- ✔️ An interactive Shiny app for exploration  
-- ✔️ A detailed vignette explaining climate attribution science  
+- ✔️ A clean bushfire risk dataset
+
+- ✔️ An interactive Shiny app for exploration
+
+- ✔️ A detailed vignette explaining climate attribution science
+
 - ✔️ A pkgdown website for full documentation
 
-This package is based on the analysis of the catastrophic  
+This package is based on the analysis of the catastrophic
+
 **2019–2020 Black Summer bushfires** in Australia.
 
 ------------------------------------------------------------------------
@@ -29,15 +33,20 @@ This package is based on the analysis of the catastrophic
 # ⭐ Why use `blacksummer`?
 
 Wildfire and climate attribution data are often difficult to explore
-without  
+without
+
 specialised software. **blacksummer** makes it simple:
 
-- 🟧 *Compact dataset* summarising extreme fire-weather indicators  
-- 🟦 *Interactive interface* to explore climate risk changes  
-- 🟩 *Clear visualisations* for probability shifts and risk ratios  
+- 🟧 *Compact dataset* summarising extreme fire-weather indicators
+
+- 🟦 *Interactive interface* to explore climate risk changes
+
+- 🟩 *Clear visualisations* for probability shifts and risk ratios
+
 - 🟨 *Designed for teaching & communication* (ETC5523)
 
-The package helps bridge **climate science**, **data analysis**, and  
+The package helps bridge **climate science**, **data analysis**, and
+
 **public communication** into one accessible tool.
 
 ------------------------------------------------------------------------
@@ -57,9 +66,12 @@ remotes::install_github("etc5523-2025/assignment-4-packages-and-shiny-apps-Devaa
 
 The package ships with `bushfire_risk`, a tibble containing:
 
-- **baseline_prob**: Historical probability  
-- **current_prob**: Present-day (1°C warming) probability  
-- **risk_ratio**: Estimated risk increase  
+- **baseline_prob**: Historical probability
+
+- **current_prob**: Present-day (1°C warming) probability
+
+- **risk_ratio**: Estimated risk increase
+
 - **lower_bound**: Conservative minimum estimate
 
 Load it with:
@@ -83,9 +95,9 @@ run_bushfire_app()
 
 This app allows you to:
 
-- Compare baseline vs modern probability  
-- Visualise risk ratios  
-- Inspect summary values  
+- Compare baseline vs modern probability
+- Visualise risk ratios
+- Inspect summary values
 - Understand the science behind attribution
 
 ------------------------------------------------------------------------
@@ -93,8 +105,8 @@ This app allows you to:
 # 📘 Vignettes & Documentation
 
 A full narrative vignette (“Burning Point: Climate, Data, and
-Responsibility”)  
-explains the scientific context behind the bushfire risk indicators.
+Responsibility”) explains the scientific context behind the bushfire
+risk indicators.
 
 Visit the full documentation site:
 
@@ -121,8 +133,10 @@ class="uri"><strong>https://etc5523-2025.github.io/assignment-4-packages-and-shi
 
 # 🧑‍💻 Author
 
-**Devaansh Gupta**  
-Monash University  
+**Devaansh Gupta**
+
+Monash University
+
 ETC5523 — Communicating with Data
 
 ------------------------------------------------------------------------
