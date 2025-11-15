@@ -121,7 +121,7 @@ class="uri"><strong>https://etc5523-2025.github.io/assignment-4-packages-and-shi
 
 # 🧑‍💻 Author
 
-**Devaansh Gupta**  
+**Devaansh S.K Gupta**  
 Monash University  
 ETC5523 — Communicating with Data
 
