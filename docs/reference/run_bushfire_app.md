@@ -1,6 +1,6 @@
-# Run the Black Summer Interactive Shiny App
+# Launch the Bushfire Shiny App
 
-Run the Black Summer Interactive Shiny App
+Opens the interactive bushfire risk exploration app.
 
 ## Usage
 
@@ -10,4 +10,4 @@ run_bushfire_app()
 
 ## Value
 
-Opens the bushfire risk explorer Shiny app.
+Runs the Shiny app in your default browser.

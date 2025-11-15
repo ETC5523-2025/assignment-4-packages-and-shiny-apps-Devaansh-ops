@@ -1,7 +1,4 @@
----
-title: "blacksummer: Exploring Australia’s Black Summer Bushfire Risk"
-output: github_document
----
+# blacksummer: Exploring Australia’s Black Summer Bushfire Risk
 
 <!-- badges -->
 
@@ -60,29 +57,17 @@ Install the development version from GitHub:
 remotes::install_github("etc5523-2025/assignment-4-packages-and-shiny-apps-Devaansh-ops")
 ```
 
-------------------------------------------------------------------------
-
-# 📊 Included Dataset
-
-The package ships with `bushfire_risk`, a tibble containing:
-
--   **baseline_prob**: Historical probability
-
--   **current_prob**: Present-day (1°C warming) probability
-
--   **risk_ratio**: Estimated risk increase
-
--   **lower_bound**: Conservative minimum estimate
-
-Load it with:
-
-``` r
-library(blacksummer)
-data(bushfire_risk)
-bushfire_risk
-```
-
-------------------------------------------------------------------------
+| 🚀 Run the Shiny App                                         |
+|:-------------------------------------------------------------|
+| \# 📊 Included Dataset                                       |
+| The package ships with `bushfire_risk`, a tibble containing: |
+| \- **baseline_prob**: Historical probability                 |
+| \- **current_prob**: Present-day (1°C warming) probability   |
+| \- **risk_ratio**: Estimated risk increase                   |
+| \- **lower_bound**: Conservative minimum estimate            |
+| Load it with:                                                |
+| `r "bushfire_risk"`
+  |
 
 # 🖥️ Launch the Interactive Shiny App
 
@@ -104,12 +89,13 @@ This app allows you to:
 
 # 📘 Vignettes & Documentation
 
-A full narrative vignette (“Burning Point: Climate, Data, and Responsibility”)
-explains the scientific context behind the bushfire risk indicators.
+A full narrative vignette (“Burning Point: Climate, Data, and Responsibility”) explains the scientific context behind the bushfire risk indicators.
 
 Visit the full documentation site:
 
-👉 [**https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-Devaansh-ops/**](https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-Devaansh-ops/){.uri}
+👉 <a
+href="https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-Devaansh-ops/"
+class="uri"><strong><https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-Devaansh-ops/></strong></a>
 
 ------------------------------------------------------------------------
 
@@ -144,3 +130,4 @@ ETC5523 — Communicating with Data
 
 This project is released under the MIT License.\
 See the `LICENSE` file for details.
+
